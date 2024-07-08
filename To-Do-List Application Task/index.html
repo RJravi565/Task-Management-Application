@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do Task Management Application</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>To Do Task Management Application </h1>
+<!-- Form to create a new task -->
+<form id="taskForm" class="task-form">
+<input type="text" id="titleInput" placeholder="Enter title" required>
+<textarea id="descriptionInput" placeholder="Enter description" required></textarea>
+<select id="statusSelect" required>
+<option value="To Do">To Do</option>
+<option value="In Progress">In Progress</option>
+<option value="Done">Done</option>
+</select>
+<button type="submit">Add Task</button>
+</form>
+ 
+        <!-- Filter dropdown -->
+<div class="filter-container">
+<label for="statusFilter">Filter by Status:</label>
+<select id="statusFilter">
+<option value="all">All</option>
+<option value="To Do">To Do</option>
+<option value="In Progress">In Progress</option>
+<option value="Done">Done</option>
+</select>
+</div>
+ 
+        <!-- Task list -->
+<ul id="taskList" class="task-list">
+<!-- Tasks will be dynamically added here -->
+</ul>
+</div>
+ 
+    <script src="firebase-config.js"></script>
+<script src="app.js"></script>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"></script>
+<!-- Include other Firebase services as needed -->
+
+</html>

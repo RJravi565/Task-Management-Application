@@ -1,0 +1,84 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+ 
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.task-form input,
+.task-form textarea,
+.task-form select,
+.task-form button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+ 
+.task-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+ 
+.task-form button:hover {
+    background-color: #0056b3;
+}
+ 
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+ 
+.task-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+ 
+.task-item button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+ 
+.task-item button:hover {
+    background-color: #c82333;
+}
+ 
+.filter-container {
+    margin-bottom: 10px;
+}
+ 
+.filter-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
